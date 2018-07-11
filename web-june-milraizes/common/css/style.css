@@ -1,0 +1,350 @@
+/* GERAL */
+
+@font-face {
+    font-family: AzoLight;
+    src: url(/common/fonts/AzoSans_100.otf);
+}
+
+@font-face {
+    font-family: AzoRegular;
+    src: url(/common/fonts/AzoSans_200.otf);
+}
+
+@font-face {
+    font-family: AzoBold;
+    src: url(/common/fonts/AzoSans_700.otf);
+}
+
+@font-face {
+    font-family: KingstonLight;
+    src: url(/common/fonts/SF\ Kingston\ Light.otf);
+}
+
+@font-face {
+    font-family: KingstonMedium;
+    src: url(/common/fonts/SF\ Kingston\ Medium.otf);
+}
+
+@font-face {
+    font-family: KingstonBold;
+    src: url(/common/fonts/SF\ Kingston\ Bold.otf);
+}
+
+* {
+    font-family: AzoRegular;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: KingstonMedium;
+}
+
+.section-container {
+    padding: 50px 0px 50px 0px;
+}
+
+.primary-title {
+    padding-bottom: 30px;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/* FEATURED */
+.header-container {
+    background-image: url(/common/img/img-main.jpg);
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+}
+
+
+.featured-container-copy {
+    position: absolute;
+    top: calc(50% - 170px);
+    left: calc(50% - 250px);
+    width: 500px;
+    height: 360px;
+    background-color: black;
+    text-align: center;
+    opacity: 0.7;
+    color: white;
+    padding: 20px;
+}
+
+.brand-logo-transp {
+    width: 150px;
+}
+
+.main-featured-text {
+
+    text-transform: uppercase;
+}
+
+.main-featured-text-2 {
+
+    font-family: KingstonMedium;
+}
+
+.mil-raizes-logo {
+    width: 130px;
+}
+
+/* GRID SECTION FEATURED */
+.grid-title, .grid-text {
+    padding: 10px;
+}
+
+.grid-title::first-letter {
+    font-size: 70px;
+    margin-right: 5px;
+}
+/* What we do Section */
+
+.horizontal-container-box:first {
+    background-color: #777777;
+    padding: 10px;
+}
+
+.horizontal-caption {
+    width: 60%;
+    height: 30%;
+    background-color: #de753c;
+    position: absolute;
+    z-index: 1000;
+    bottom: 0;
+    right: 0;
+    transition: width 800ms, height 800ms;
+    opacity: .9;
+    color: white;
+}
+
+.horizontal-title {
+    padding: 15px;
+    font-family: KingstonMedium;
+
+}
+
+.horizontal-copy {
+    padding: 0px 0px 0px 15px;
+    visibility: hidden;
+}
+
+.horizontal-container-box:hover .horizontal-copy {
+    visibility: visible;
+}
+
+.horizontal-container-box:hover .horizontal-caption {
+    width: 100%;
+    height: 100%;
+}
+
+.what-we-do-copy {
+    padding-right: 10px;
+}
+
+/* Card Group Products Container - PROJECTOS */
+
+#um, #dois, #tres {
+    transition: background-color 400ms;
+}
+
+#um:hover {
+    background-color: blue;
+    color: white;
+}
+
+#dois:hover {
+    background-color: green;
+}
+
+#tres:hover {
+    background-color: orange;
+}
+
+.carousel-indicators {
+    bottom: -40px;
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #ccc;  
+}
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    background-color: #777;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 15%;
+    color: #ccc !important;
+    text-align: center;
+    opacity: .5;
+}
+
+
+
+/* The Best Design Section */
+.budget-container {
+    background-image: url(/common/img/img-budget.jpg);
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+}
+
+.above-content {
+    z-index: 999;
+    position: relative;
+    left: calc(50% - 300px);
+    top: calc(50% - 70px);
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    color: white;
+}
+
+.above-content h1 {
+    font-family: AzoRegular;
+
+}
+
+.above-content p {
+    font-family: AzoBold;
+
+}
+
+.budget-button {
+    background-color: #de753c;
+    border: 0;
+    text-transform: uppercase;
+
+}
+/* QUEM SOMOS */
+
+.who-copy::first-letter {
+    font-size: 55px;
+    float: left;
+    font-family: KingstonMedium;
+    line-height: 0.5em;
+    padding-bottom: -0.5em;
+    padding-right: 0.1em;
+}
+
+.who-copy {
+    line-height: 1.5em;
+    padding-bottom: 20px;
+}
+
+.img-logo {
+    max-width: 150px;
+}
+
+.logo-content {
+}
+
+.who-secondary-copy {
+
+}
+
+/* PARTERNS SECTION */
+
+.partner-logo {
+    width: 200px;
+    padding: 10px 30px;
+}
+
+
+/* FORM */ 
+.form-inner-container {
+    padding: 15px 100px;
+    background-color: white;
+}
+
+.form-container {
+    height: 60px;
+    margin-bottom: -26px;
+}
+
+.form-container span {
+    font-family: AzoBold;
+    padding: 0px 10px;
+}
+
+.email-form-submit {
+    background-color: #de753c;
+    border: 0;
+}
+
+.email-input {
+    background-color: #ccc;
+    color: white;
+    border: 0;
+    padding: 4px;
+}
+
+
+/* FOOTER */ 
+footer {
+    background-color: black;
+    color: white;
+    padding: 50px 0px 30px 0px;
+}
+
+.my-footer {
+    padding-top: 70px;
+}
+
+.footer-logo-container{
+    padding-bottom: 30px;
+}
+
+.footer-link {
+    color: white;
+    list-style-type: none;
+    margin-bottom: 3px;
+}
+
+
+.footer-link:hover {
+    color: white;
+
+}
+
+.footer-adress, .footer-contact {
+    margin-bottom: 3px;
+}
+
+.social-icon {
+    width: 22px;
+    padding-right: 7px;
+}
+
+.footer-logo {
+    width: 200px;
+}

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MilFlores</title>
+    <!-- css -->
+    <link rel="stylesheet" href="/common/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/common/css/style.css">
+    <link rel="stylesheet" href="/common/css/animate.css">
+    <link rel="stylesheet" href="/common/css/mobile.css">
+
+
+    <!-- Fonts are included on the css file style.css -->
+</head>
+
+<body>
+    <!-- Modal for photos -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="/common/img/img-whoweare-1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL FOR ORÇAMENTO INSERIDO ACIMA. INSERIR FORMULARIO.........................................................-->
+    <div class="modal fade" id="budgetModal" tabindex="0" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--............................................................................................................. -->
+    <!-- navegação, navbar______________________ -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <img src="/common/img/MILRAIZES_logo.png" alt="" class="navbar-brand mil-raizes-logo" href="#">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#whatwedo">O QUE FAZEMOS
+                    <span class="sr-only">(current)</span>
+                </a>
+                <a class="nav-item nav-link" href="#projects">OS NOSSOS PROJECTOS</a>
+                <a class="nav-item nav-link" href="#whoweare">QUEM SOMOS</a>
+                <a class="nav-item nav-link" href="#contacts">CONTACTOS</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- header, inicial, featured  -->
+    <div class="header-container container-fluid p-0">
+        <div class="row">
+            <div class="featured-container-copy animated fadeIn">
+                <img src="/common/img/logo-icon-white.png" alt="" class="brand-logo-transp">
+                <p class="display-4 main-featured-text">CONSTRUÇÃO
+                    <br>& MANUTENÇÃO</p>
+                <p class="display-6 main-featured-text-2">DE ESPAÇOS VERDES</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- grid section______________________ -->
+    <section class="section-container">
+        <div class="container featured-grid-section">
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-sm-6 p-0">
+                    <h2 class="grid-title">Lorem Ipsum</h2>
+                    <p class="grid-text">Containers are the most basic layout element in Bootstrap and are required when using our default grid
+                        system.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-sm-6 p-0">
+                    <img src="/common/img/img-featured-1.jpg" alt="" class="grid-img img-fluid">
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-sm-6 p-0">
+                    <img src="/common/img/img-featured-2.jpg" alt="" class="grid-img img-fluid">
+                </div>
+                <div class="col-lg-4 col-sm-6 p-0">
+                    <h2 class="grid-title">Lorem Ipsum</h2>
+                    <p class="grid-text">Containers are the most basic layout element in Bootstrap and are required when using our default grid
+                        system.
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-sm-6 p-0">
+                    <h2 class="grid-title">Lorem Ipsum</h2>
+                    <p class="grid-text">Containers are the most basic layout element in Bootstrap and are required when using our default grid
+                        system.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-sm-6 p-0">
+                    <img src="/common/img/img-featured-3.jpg" alt="" class="grid-img img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- what we do-feat-container______________________ -->
+    <section class="section-container" id="whatwedo">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-lg-3 col-md-6 col-sm-12 col-xs-6 horizontal-container-box">
+                    <h1 class="what-we-do-title primary-title">
+                        O QUE FAZEMOS
+                    </h1>
+                    <p class="what-we-do-copy">
+                        Projetamos, construímos e gerimos a manutenção de espaços públicos e privados. Gostamos de resolver os desafios propostos
+                        pelos nossos clientes com base na técnica e na criatividade que nos define, sempre de olhos na redução
+                        de custos e com respeito pelo meio ambiente
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 horizontal-container-box">
+                    <img src="/common/img/img-wedo-1.jpg" alt="" class="horizontal-img img-fluid">
+                    <div class="horizontal-caption">
+                        <p class="horizontal-title">Lorem</p>
+                        <ul class="horizontal-copy">
+                            <li class="horizontal-list">Jardins</li>
+                            <li class="horizontal-list">Espaços Públicos</li>
+                            <li class="horizontal-list">Redes de Rega</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 horizontal-container-box">
+                    <div class="horizontal-caption">
+                        <p class="horizontal-title">Lorem</p>
+                        <ul class="horizontal-copy">
+                            <li class="horizontal-list">Jardins</li>
+                            <li class="horizontal-list">Espaços Públicos</li>
+                            <li class="horizontal-list">Redes de Rega</li>
+                        </ul>
+                    </div>
+                    <img src="/common/img/img-wedo-2.jpg" alt="" class="horizontal-img img-fluid">
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 horizontal-container-box">
+                    <div class="horizontal-caption">
+                        <p class="horizontal-title">Lorem</p>
+                        <ul class="horizontal-copy">
+                            <li class="horizontal-list">Jardins</li>
+                            <li class="horizontal-list">Espaços Públicos</li>
+                            <li class="horizontal-list">Redes de Rega</li>
+                        </ul>
+                    </div>
+                    <img src="/common/img/img-wedo-3.jpg" alt="" class="horizontal-img img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Card Group Products Container______________________ -->
+    <section class="section-container container" id="projects">
+        <h2 class="primary-title text-center">OS NOSSOS PRODUTOS</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <!-- primeiro item do carrosel -->
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9 mx-auto">
+                            <div class="card-group">
+                                <div id="um" class="card-body col-lg-4 col-sm-6">
+                                    <p class="card-category">Manutenção</p>
+                                    <h5 class="card-title">Quinta</h5>
+                                    <img src="https://dummyimage.com/300x300/666/fff" alt="" class="card-img-bottom" data-toggle="modal" data-target="#exampleModal">
+                                </div>
+                                <div id="dois" class="card-body col-lg-4 col-sm-6">
+                                    <p class="card-category">Projectos</p>
+                                    <h5 class="card-title">Rede de Regas Automáticas</h5>
+                                    <img src="https://dummyimage.com/300x300/666/fff" alt="" class="card-img-bottom">
+                                </div>
+                                <div class="card-body col-lg-4 col-sm-6">
+                                    <p class="card-category">Construção</p>
+                                    <h5 class="card-title">Parque Infantil</h5>
+                                    <img src="https://dummyimage.com/300x300/666/fff" alt="" class="card-img-bottom">
+                                </div>
+                                <div id="um" class="card-body col-lg-4 col-sm-6">
+                                    <p class="card-category">Manutenção</p>
+                                    <h5 class="card-title">Jardim Público</h5>
+                                    <img src="https://dummyimage.com/300x300/666/fff" alt="" class="card-img-bottom">
+                                </div>
+                                <div id="dois" class="card-body col-lg-4 col-sm-6">
+                                    <p class="card-category">Projectos</p>
+                                    <h5 class="card-title">Espaço Público</h5>
+                                    <img src="https://dummyimage.com/300x300/666/fff" alt="" class="card-img-bottom">
+                                </div>
+                                <div class="card-body col-lg-4 col-sm-6">
+                                    <p class="card-category">Construção</p>
+                                    <h5 class="card-title">Reabilitação de Solos</h5>
+                                    <img src="https://dummyimage.com/300x300/666/fff" alt="" class="card-img-bottom">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Segundo item do carrosel -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9 mx-auto">
+                            <div class="card-group">
+                                <div id="um" class="card-body col-lg-4 col-sm-6">
+                                    <p class="card-category">Manutenção</p>
+                                    <h5 class="card-title">Quinta</h5>
+                                    <img src="https://dummyimage.com/300x300/666/fff" alt="" class="card-img-bottom">
+                                </div>
+                                <div id="dois" class="card-body col-lg-4 col-sm-6">
+                                    <p class="card-category">Projectos</p>
+                                    <h5 class="card-title">Rede de Regas Automáticas</h5>
+                                    <img src="https://dummyimage.com/300x300/666/fff" alt="" class="card-img-bottom">
+                                </div>
+                                <div class="card-body col-lg-4 col-sm-6">
+                                    <p class="card-category">Construção</p>
+                                    <h5 class="card-title">Parque Infantil</h5>
+                                    <img src="https://dummyimage.com/300x300/666/fff" alt="" class="card-img-bottom">
+                                </div>
+                                <div id="um" class="card-body col-lg-4 col-sm-6">
+                                    <p class="card-category">Manutenção</p>
+                                    <h5 class="card-title">Jardim Público</h5>
+                                    <img src="https://dummyimage.com/300x300/666/fff" alt="" class="card-img-bottom">
+                                </div>
+                                <div id="dois" class="card-body col-lg-4 col-sm-6">
+                                    <p class="card-category">Projectos</p>
+                                    <h5 class="card-title">Espaço Público</h5>
+                                    <img src="https://dummyimage.com/300x300/666/fff" alt="" class="card-img-bottom">
+                                </div>
+                                <div class="card-body col-lg-4 col-sm-6">
+                                    <p class="card-category">Construção</p>
+                                    <h5 class="card-title">Reabilitação de Solos</h5>
+                                    <img src="https://dummyimage.com/300x300/666/fff" alt="" class="card-img-bottom">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- The best design section______________________  -->
+    <div class="budget-container container-fluid p-0">
+        <div class="row d-inline align-middle">
+            <div class="above-content">
+                <h3>O melhor design</h3>
+                <h1>PARA O SEU JARDIM</h1>
+                <p>Peça já o seu orçamento</p>
+                <!-- Button trigger modal that is on top of the html-->
+                <button type="button" class="btn btn-primary budget-button" data-toggle="modal" data-target="#budgetModal">
+                    Pedido de Orçamento
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Who we are Section_____________________ -->
+    <section class="section-container container" id="whoweare">
+        <h2 class="primary-title text-center">QUEM SOMOS</h2>
+        <div class="row">
+            <div class="who-container-1 col-lg-6 col-sm-12">
+                <p class="who-copy">Lorem, ipsum dolor sit amet consectetur adipisicing elit. At voluptatibus obcaecati amet ducimus deleniti
+                    praesentium molestias, nihil nulla sunt fugit maiores odio perspiciatis itaque accusantium molestiae
+                    blanditiis, impedit aspernatur sint. Lorem, ipsum dolor sit amet consectetur adipisicing elit. At voluptatibus
+                    obcaecati amet ducimus deleniti praesentium molestias, nihil nulla sunt fugit maiores odio perspiciatis
+                    itaque accusantium molestiae blanditiis, impedit aspernatur sint.</p>
+                <img class="card-img-bottom" src="/common/img/img-whoweare-1.jpg" alt="">
+            </div>
+            <div class="who-container-2 col-lg-6 col-sm-12">
+                <div class="row">
+                <p class="who-secondary-copy">
+                    <span class="who-quote">"</span>
+                    <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ut, itaque vero optio odit, ipsum esse at
+                    maxime beatae mollitia iste laborum sit consectetur nisi blanditiis, dignissimos animi repellat nihil.
+                    <br>
+                    <span class="who-quote">"</span>
+                </p>
+            </div>
+                <div class="logo-content bottom">
+                    <a href="#" class="logo">
+                        <img class="img-logo" src="/common/img/logo-certif.png" alt="">
+                    </a>
+                    <a href="#" class="logo">
+                        <img class="img-logo" src="/common/img/logo-certif.png" alt="">
+                    </a>
+                    <a href="#" class="logo">
+                        <img class="img-logo" src="/common/img/logo-certif.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- With who we work_____________________ -->
+    <section class="section-container container">
+        <h2 class="primary-title text-center">COM QUEM TRABALHAMOS</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <!-- primeiro item do carrosel -->
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="partner-brands">
+                            <a href="#" class="logo">
+                                <img class="partner-logo" src="https://dummyimage.com/300x300/999/fff" alt="">
+                            </a>
+                            <a href="#" class="logo">
+                                <img class="partner-logo" src="https://dummyimage.com/300x300/999/fff" alt="">
+                            </a>
+                            <a href="#" class="logo">
+                                <img class="partner-logo" src="https://dummyimage.com/300x300/999/fff" alt="">
+                            </a>
+                            <a href="#" class="logo">
+                                <img class="partner-logo" src="https://dummyimage.com/300x300/999/fff" alt="">
+                            </a>
+                        </div>
+                        <div class="partner-brands">
+                            <a href="#" class="logo">
+                                <img class="partner-logo" src="https://dummyimage.com/300x300/999/fff" alt="">
+                            </a>
+                            <a href="#" class="logo">
+                                <img class="partner-logo" src="https://dummyimage.com/300x300/999/fff" alt="">
+                            </a>
+                            <a href="#" class="logo">
+                                <img class="partner-logo" src="https://dummyimage.com/300x300/999/fff" alt="">
+                            </a>
+                            <a href="#" class="logo">
+                                <img class="partner-logo" src="https://dummyimage.com/300x300/999/fff" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Segundo item do carrosel -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="partner-brands">
+                            <a href="#" class="logo">
+                                <img class="partner-logo" src="https://dummyimage.com/300x300/999/fff" alt="">
+                            </a>
+                            <a href="#" class="logo">
+                                <img class="partner-logo" src="https://dummyimage.com/300x300/999/fff" alt="">
+                            </a>
+                            <a href="#" class="logo">
+                                <img class="partner-logo" src="https://dummyimage.com/300x300/999/fff" alt="">
+                            </a>
+                            <a href="#" class="logo">
+                                <img class="partner-logo" src="https://dummyimage.com/300x300/999/fff" alt="">
+                            </a>
+                        </div>
+                        <div class="partner-brands">
+                            <a href="#" class="logo">
+                                <img class="partner-logo" src="https://dummyimage.com/300x300/999/fff" alt="">
+                            </a>
+                            <a href="#" class="logo">
+                                <img class="partner-logo" src="https://dummyimage.com/300x300/999/fff" alt="">
+                            </a>
+                            <a href="#" class="logo">
+                                <img class="partner-logo" src="https://dummyimage.com/300x300/999/fff" alt="">
+                            </a>
+                            <a href="#" class="logo">
+                                <img class="partner-logo" src="https://dummyimage.com/300x300/999/fff" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+    </section>
+    <section class="container form-container">
+        <div class="row justify-content-center">
+            <div class="form-inner-container">
+                <form class="form-inline">
+                    <span>Subscreva à nossa newsletter e receba dicas e ofertas</span>
+                    <input class="email-input" type="email" name="" id="" placeholder="mete o email pa">
+                    <input class="email-form-submit" type="image" src="/common/img/paper-plane.png" alt="">
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="container-fluid my-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 footer-logo-container">
+                    <img src="/common/img/logo-white.png" alt="" class="footer-logo">
+                </div>
+                <div class="col-lg-5">
+                    <p class="footer-adress">Construção e Manutenção de Espaços Verdes</p>
+                    <p class="footer-adress">Rua de Alfena</p>
+                    <p class="footer-adress">Zona industrial</p>
+                    <p class="footer-adress">Porto</p>
+                    <br>
+                    <p class="footer-contact">
+                        <b>T.</b> +351 543 543 543</b>
+                    </p>
+                    <p class="footer-contact">
+                        <b>C</b>+341 423 443 333></p>
+                    <p class="footer-contact">
+                        <b>E.</b>milraizes@milraizes.pt</b>
+                    </p>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12">
+                            <li>
+                                <a href="#" class="footer-link">Home</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-link">O que fazemos</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-link">Os nossos projectos</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-link">Quem somos</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-link">Contactos</a>
+                            </li>
+                        </div>
+                        <div class="col-lg-4">
+                            <li>
+                                <a href="#" class="footer-link">Política de Privacidade</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-link">Política de Cookies</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-link">Adicionar aos favoritos</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-link">Sugerir este site</a>
+                            </li>
+                        </div>
+                        <div class="col-lg-4">
+                            <li>
+                                <a href="" class="footer-link social-link">
+                                    <img class="social-icon" src="/common/img/facebook.png" alt="">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-link social-link">
+                                    <img class="social-icon" src="/common/img/twitter.png" alt="">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-link social-link">
+                                    <img class="social-icon" src="/common/img/pinterest.png" alt="">Pinterest</a>
+                            </li>
+                            <li>
+                                <a href="" class="footer-link social-link">
+                                    <img class="social-icon" src="/common/img/instagram.png" alt="">Instagram</a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="/common/vendor/jquery/jquery.min.js"></script>
+<script src="/common/vendor/bootstrap/js/bootstrap.min.js"></script>
+<script>
+    $('#myModal').modal('handleUpdate')
+</script>
+
+</html>
